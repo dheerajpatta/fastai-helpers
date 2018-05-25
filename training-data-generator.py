@@ -53,7 +53,8 @@ def download_test_images(dest_dir,search_terms,quantity_per_term):
         "keywords":search_terms,
         "limit":quantity_per_term,
         "type":"photo",
-        "output_directory":dest_dir
+        "output_directory":dest_dir,
+        "chromedriver":"./chromedriver.exe"
     }
 
     # get the downloader to download up 100 images inside a folder called <dest_dir>/<search term>
